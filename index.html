@@ -6,16 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
     <script defer src="script.js"></script>
+    <link defer rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div id="message-container"></div>
-    <form id="send-container">
-        <input type="text" name="" id="message-input">
-        <button type="submit" id="send-button">Send</button>
-    </form>
+    <div class="container">
+        <h1> Chat Room</h1>
+        <div class="scroll-bg">
+            <div class="scroll-div">
+                <div id="message-container" class="scroll-obj">
+                </div>
+            </div>
+        </div>
+
+        <form id="send-container">
+            <input type="text" id="message-input">
+            <button type="submit" id="send-button">Send</button>
+        </form>
+    </div>
 </body>
 
 </html>
