@@ -3,8 +3,7 @@ const messageForm = document.getElementById('send-container')
 const messageInput = document.getElementById('message-input')
 const messageContainer = document.getElementById('message-container')
 const sendButton = document.getElementById('send-button')
-const userName = "sasi"
-//  prompt('Enter Your Name')
+const userName = prompt('Enter Your Name')
 appendMessage('You Joined')
 socket.emit('new-user', userName)
 

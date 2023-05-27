@@ -9,27 +9,19 @@ body {
 
 .scroll-bg {
     background-color: rgb(243, 243, 240);
-    width: 70vh;
     border-radius: 1rem;
 }
 
 .scroll-div {
-    width: 70vh;
     height: 500px;
     overflow-y: scroll;
 }
 
 .scroll-obj {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    height: 500px;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     background: black;
     overflow: hidden;
 }
@@ -38,58 +30,28 @@ h1 {
     color: white;
 }
 
-#message-container {
-    padding: 1rem;
-}
-
-#message-container div {
-    margin-bottom: 1rem;
-
-}
-
-#send-container {
-    display: flex;
-    width: 70vh;
-    justify-content: space-around;
-    align-items: flex-end;
-    gap: 3
-}
-
 input {
-    padding: 10px;
-    margin: 10px 0;
-    border: 0;
-    border-bottom: 1px solid #eee;
     box-shadow: 0 0 15px 4px rgba(233, 20, 20, 0.06);
-    border-radius: 10px;
-    width: 80%;
 }
 
 button {
-
     appearance: none;
     -webkit-appearance: none;
-    width: 10%;
-    padding: 10px;
-    margin-left: 5%;
-    border: none;
     background-color: #3F51B5;
     color: #fff;
     font-weight: 600;
-    border-radius: 5px;
-    width: 30%;
-    margin-top: 0%;
-    margin-bottom: 0.7rem;
 }
 
 .scroll-div::-webkit-scrollbar {
-    width: 0.5em;
-    /* Adjust the width as needed */
     background-color: transparent;
-    /* Set the background color to match your container */
+    /* Set the background color to match the container */
 }
 
 .scroll-div::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0);
-    /* Set the background color to match your container */
+    /* Set the background color to match the container */
+}
+
+#message-container div{
+    margin-top: 10px;
 }
